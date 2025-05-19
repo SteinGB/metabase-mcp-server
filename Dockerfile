@@ -14,6 +14,8 @@ WORKDIR /usr/src/app
 # Copy package files first to leverage Docker layer caching
 COPY package*.json ./
 
+EXPOSE 3000
+
 # Configure npm to skip prepare scripts
 RUN npm config set ignore-scripts true
 # Install all dependencies including devDependencies for build setup

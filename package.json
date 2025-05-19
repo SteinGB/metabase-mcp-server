@@ -4,10 +4,6 @@
   "description": "A Model Context Protocol server for Metabase integration",
   "private": true,
   "type": "module",
-  "author": {
-    "name": "Hyeongjun Yu",
-    "url": "https://github.com/hyeongjun-dev"
-  },
   "bin": {
     "metabase-mcp-server": "./build/index.js"
   },
@@ -27,17 +23,23 @@
     "test": "echo \"No tests specified\" && exit 0"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^0.6.1",
-    "dotenv": "^16.3.1",
+    "@modelcontextprotocol/sdk": "^1.11.4",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
     "zod": "^3.22.4"
   },
   "devDependencies": {
+    "@types/body-parser": "^1.19.5",
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.2",
     "@types/node": "^20.17.22",
-    "typescript": "^5.3.3",
-    "eslint": "^8.57.0",
     "@typescript-eslint/eslint-plugin": "^7.1.0",
     "@typescript-eslint/parser": "^7.1.0",
-    "prettier": "^3.2.5"
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
   },
   "keywords": [
     "metabase",

@@ -18,6 +18,7 @@ import {
   CallToolRequestSchema
 } from "@modelcontextprotocol/sdk/types.js";
 import { z } from "zod";
+import 'dotenv/config';
 
 // Custom error enum
 enum ErrorCode {
